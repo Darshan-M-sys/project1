@@ -1,0 +1,175 @@
+    @import url(https://fonts.googleapis.com/css?family=Gravitas+One:regular);
+    @import url(https://fonts.googleapis.com/css?family=Matangi:300,regular,500,600,700,800,900);
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+      text-align:right;
+      background:linear-gradient(to right,blue,rgb(32, 24, 189), rgb(127, 127, 248));
+      color:white;
+
+      
+    }
+    header{
+      background-color: black;
+       display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    }
+    nav{
+      text-align: center;
+    }
+    nav ul{
+      display:flex;
+      justify-items: end; 
+      gap:20px;
+
+
+    }
+    nav ul li{
+      text-align: right;
+      padding:20px;
+      font-size: 30px;
+       list-style: none;
+   
+    }
+    
+    nav ul li a{
+      font-weight: bold;
+      color: white;;
+      text-decoration: none;
+     
+    }
+    .logo-container{
+      padding: 20px;
+    }
+    .logo-container img{ width:auto;
+      height:50px;
+      border-radius: 10px;
+    
+    }
+
+
+      nav ul li a:hover{
+        color:black;
+        border-radius: 5px;
+     padding: 5px;
+  background-color: azure;
+  filter:drop-shadow(10px 0px 30px rgb(49, 10, 242))
+     
+    }
+
+    .hero{
+      text-align: center;
+      padding: 200px;
+    }
+    .hero h1{
+      transition: background 2s ease-in-out,transform 2s;
+      font-family: 'Tangerine', Arial, sans-serif;
+      font-size: 300px;
+      background:linear-gradient(to right,rgb(6, 201, 245), yellow, rgb(189, 10, 117),rgb(90, 0, 128));
+      background-size: 200% 300%;
+     
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: background 2s infinite;
+   
+   
+    }
+   @keyframes background{
+ 100%, 0% {
+  transition: transform 2s;
+    transform: scale(0.8);
+    background-position: 0% 50%;
+  }
+  50%{
+    transform:scale(1.1) ;
+    background-color: aqua;
+    background-position: 100% 50%;
+  }
+}
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;  /* aligns items to the center horizontally */
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: yellow;
+}
+
+footer div {
+  text-align: center;
+  padding: 10px 0;
+}.form{
+  text-align: right;
+}
+form{
+  transition: all 2s ease-in-out;
+  display:none;
+
+  position: absolute;
+  top:0;
+  right: 0;
+  margin: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: azure;
+  text-align: center;
+}
+form input{
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+
+}
+form legend{
+  color:black;
+  font-size: 20px;
+}
+
+    @media screen and (max-width:768px) {
+       nav ul li{
+     
+      padding:10px;
+      font-size: 8px;
+       list-style: none;
+       
+    }
+    header{
+      padding: 1px;
+    }
+    nav{
+      padding:10px;
+
+    }
+    .logo-container img{ width:auto;
+      height:25px;
+      border-radius: 10px;
+      
+    }
+    .hero h1{
+      font-size: 50px;
+    }
+  }
